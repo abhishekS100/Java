@@ -1,0 +1,53 @@
+import java.util.*;
+ 
+public class Hashing {
+   public static void main(String args[]) {
+      
+       // Creation
+       HashMap<String, Integer> map = new HashMap<>();
+ 
+       //(1) Insert
+       
+       map.put("India", 120);
+       map.put("US", 30);
+       map.put("China", 150);
+ 
+       System.out.println(map);
+ 
+       //(2) Update
+       map.put("China", 180);
+       System.out.println(map);
+ 
+ 
+       //(3) Search
+       
+       if(map.containsKey("Indonesia")) {
+           System.out.println("key is present in the map");
+       } else {
+           System.out.println("key is not present in the map");
+       }
+ 
+       System.out.println(map.get("China")); //key exists
+       System.out.println(map.get("Indonesia")); //key doesn't exist
+ 
+       //(4) Iteration(method-1)
+       
+       for( Map.Entry<String, Integer> e : map.entrySet()) {
+           System.out.println(e.getKey());
+           System.out.println(e.getValue());
+       }
+ 
+       //(5) Iteration(method-2)
+       
+       Set<String> keys = map.keySet();
+       for(String key : keys) {
+           System.out.println(key+ " " + map.get(key));
+       }
+ 
+       //(6) Delete
+       
+       map.remove("China");
+       System.out.println(map);
+ 
+   }
+}
