@@ -4,7 +4,7 @@ import java.util.*;
 
 class Test{
 
-  static int printArray(int[] arr){
+  static int largestElement(int[] arr){
     
     int n = arr.length;
     int max = Integer.MIN_VALUE;
@@ -21,7 +21,7 @@ class Test{
     
      int[] arr = {5,8,2,9,3,4,1};
     
-    System.out.println(printArray(arr));
+    System.out.println(largestElement(arr));
     
   }
 }
