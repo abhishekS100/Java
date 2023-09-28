@@ -1,6 +1,8 @@
 
-                                                                                      // Inplace | Stable   
-                                                                                      // Time Complexiety = O(n^2)
+// Inplace | Stable   
+// Time Complexiety = O(n^2)
+
+                                                                                      
 class BubbleSort {
     
     public static void main(String[] args) {
